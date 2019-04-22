@@ -1,0 +1,27 @@
+<view class="" hover-class="none" hover-stop-propagation="false">
+  <view>购物车</view>
+
+  <view wx:for="{{carts}}" class="item-container">
+    <view class="title">
+      {{item.title}}
+    </view>
+
+    <view class="cart">
+      -
+    </view>
+    <view>
+      {{item.num}}
+    </view>
+    <view class="cart" data-index="{{index}}" bindtap="addCart">
+      +
+    </view>
+  </view>
+  <view wx:if="{{address.userName}}">
+    <view>{{address.userName}}</view>
+    <view>{{address.telNumber}}</view>
+    <view>{{address.provinceName}}{{address.cityName}}{{address.countyName}}{{address.detailInfo}}</view>
+  
+  </view>
+  <button type='primary' bindtap='order'>￥{{total}}下单</button>
+</view>
+  

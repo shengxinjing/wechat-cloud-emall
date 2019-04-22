@@ -1,0 +1,14 @@
+<!--pages/detail/detail.wxml-->
+
+<view>
+<view>
+</view>
+<image src="{{info.image}}" id="detail-image" mode='aspectFot'></image>
+
+<!-- <view>{{info._id}}</view> -->
+<view>{{info.title || item.name}}</view>
+<view>￥{{info.price}}</view>
+<button type='primary' bindtap="order">购买</button>
+<button type='primary' bindtap="spike">设置秒杀</button>
+<button type='primary' bindtap="group">我要拼团</button>
+</view>

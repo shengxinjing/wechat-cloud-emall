@@ -1,0 +1,58 @@
+.item-container{
+  display: flex;
+  margin-top:150rpx;
+}
+.image{
+  width:200rpx;
+  height:100rpx;
+  flex:1;
+}
+.content{
+  flex:2
+}
+.title{
+  font-weight: bold;
+}
+.action{
+  flex:1;
+  
+}
+.tag{
+  padding:0 5rpx;
+  background:#EA5149;
+  border-radius: 20%;
+  margin:5rpx;
+  color:white;
+  font-size: 28rpx;
+}
+
+.cart{
+  /* padding:15rpx; */
+  background: #EA5149;
+  border-radius: 50%;
+  color:white;
+  width:40rpx;
+  height:40rpx;
+  line-height: 38rpx;
+  text-align: center;
+}
+
+.slide-image{
+  width:750rpx;
+  height:370rpx;
+}
+
+.activity{
+  display: flex
+}
+.subpage{
+  flex:1;
+  text-align:center;
+  vertical-align: middle;
+  height:150rpx;
+  line-height: 150rpx;
+  font-size:30rpx;
+  background:pink;
+  border-radius: 50%;
+  color:white;
+}

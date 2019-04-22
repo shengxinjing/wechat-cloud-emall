@@ -1,0 +1,18 @@
+<!--pages/spike/spike.wxml-->
+<view>
+
+
+<image src="{{info.image}}" id="detail-image" mode='aspectFot'></image>
+
+<!-- <view>{{info._id}}</view> -->
+<view>{{info.title || info.name}}</view>
+<view>
+
+<text class="del">
+￥{{info.price}}  
+
+</text>
+  </view>
+  <button type="primary" disabled> {{restTime}} 秒杀 ￥{{info.spikePrice}}</button>
+</view>
+

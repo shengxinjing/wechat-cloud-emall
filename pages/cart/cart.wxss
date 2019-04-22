@@ -1,0 +1,29 @@
+/* pages/cart/cart.wxss */
+
+/* pages/cart/cart.wxss */
+
+.cart{
+  /* padding:15rpx; */
+  background: #EA5149;
+  border-radius: 50%;
+  color:white;
+
+  width:40rpx;
+  height:40rpx;
+  line-height: 38rpx;
+  text-align: center;
+}
+
+.item-container{
+  display: flex;
+  margin-top:100rpx;
+}
+.title{
+  flex:1;
+}
+.action{
+  flex:2
+}
+.cart-container{
+  padding:10rpx;
+}

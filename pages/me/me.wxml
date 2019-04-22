@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="container">
+
+<!-- 
+  <image src="cloud://panda-017d9c.7061-panda-017d9c/panda-img-cCnxMdJ0xqWwa9572f99461313409545333824b4075d"></image> -->
+  <view class="userinfo">
+
+
+    <button wx:if="{{!userInfo.openid}}" open-type="getUserInfo" bindgetuserinfo='getUserInfo'>登录</button>
+   <block>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+
+
+
+   </block>
+
+<!-- 
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block> -->
+  </view>
+      <button type='primary' open-type="contact">联系客服</button>
+      <button type='primary' open-type="feedback">意见反馈</button>
+      <button type='primary' bindtap="logout">退出</button>
+
+      <!-- <button type='primary' bindtap='addMall'>添加商品</button> -->
+      <!-- <button type='primary' bindtap='getMall'>获取商品</button> -->
+</view>

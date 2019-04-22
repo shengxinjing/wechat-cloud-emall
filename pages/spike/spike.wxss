@@ -1,0 +1,10 @@
+/* pages/spike/spike.wxss */
+
+#detail-image{
+  width:750rpx;
+  height:370rpx;
+}
+
+.del{
+  text-decoration: line-through;
+}
