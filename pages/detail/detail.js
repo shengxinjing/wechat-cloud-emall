@@ -9,6 +9,40 @@ Page({
     id:'',
     info:{}
   },
+
+  group(){
+    wx.showModal({
+      title: '设置拼团',
+      content: '简单粗暴，拼团链接转发好友，好友点击加入，三人成团，价格减15块',
+      success:res=>{
+        if(res.confirm){
+          console.log(this.data.info)
+          const { _id,_openid, ...reset } = this.data.info
+          console.log({
+            ...reset,
+            _goodid: this.data.info._id,
+            groupPrice: this.data.info.price - 15,
+          })
+          db.collection('group').add({
+            data: {
+              ...reset,
+              _goodid: this.data.info._id,
+              groupPrice: this.data.info.price - 15,
+              boss:wx.getStorageSync('userInfo'),
+              member:['https://avatars1.githubusercontent.com/u/5067495?v=4','https://avatars3.githubusercontent.com/u/24802038?v=4']
+            },
+            success:res=>{
+              console.log(res)
+              wx.showToast({
+                title: '设置成功',
+              })
+            }
+          })
+        }
+      }
+    })
+
+  },
   spike(){
     wx.showModal({
       title: '设置秒杀',

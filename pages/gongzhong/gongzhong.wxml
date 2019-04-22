@@ -1,0 +1,7 @@
+<!--pages/gongzhong/gongzhong.wxml-->
+<view>
+<view>关注公众号</view>
+ <official-account></official-account>
+ 
+ 
+ </view>

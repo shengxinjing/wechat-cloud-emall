@@ -1,0 +1,38 @@
+<view>
+
+
+<image src="{{info.image}}" id="detail-image" mode='aspectFot'></image>
+
+<!-- <view>{{info._id}}</view> -->
+<view>{{info.title || info.name}}</view>
+<view>
+<text class="del">
+￥{{info.price}}  
+
+</text>
+<text>
+￥{{info.groupPrice}}  
+
+</text>
+  </view>
+<view>
+团长： 
+
+<image 
+class="avatar" src="cloud://tcb-advanced-a656fc.7463-tcb-advanced-a656fc/timg.jpeg"></image>
+</view>
+  <view>
+参团： 
+
+<image 
+class="avatar" src="https://avatars3.githubusercontent.com/u/24802038?v=4"></image>
+<image 
+
+class="avatar" src="https://avatars1.githubusercontent.com/u/47496974?v=4"></image>
+
+
+
+</view>
+  <button type="primary" disabled> 还差1人成团，快去转发下单</button>
+</view>
+

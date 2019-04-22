@@ -6,7 +6,17 @@ Page({
     list:[],
     tops:[]
   },
-
+  show(){
+    wx.navigateToMiniProgram({
+      appId: 'wx5a9f6a2c25353607',
+      path: 'pages/index/index',
+      extraData: {},
+      // envVersion: 'develop',
+      success(res) {
+        // 打开成功
+      }
+    })
+  },
   
   addCart(e){
     const {item} = e.currentTarget.dataset

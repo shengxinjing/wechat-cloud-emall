@@ -32,7 +32,13 @@
   </view>
 
   <view class="subpage">
+      <navigator
+    url="/pages/group/group"
+    hover-class="navigator-hover"
+  >
     拼团
+  </navigator>
+
   </view>
 
 
@@ -46,12 +52,19 @@
   </navigator>
   </view>
 
-  <view class="subpage">
+  <view class="subpage" bindtap='show'>
     秀场
   </view>
 
   <view class="subpage">
+      <navigator
+    url="/pages/gongzhong/gongzhong"
+    hover-class="navigator-hover"
+  >
+  
     公众号
+  </navigator>
+
   </view>
 </view>
 

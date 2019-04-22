@@ -4,9 +4,10 @@
     "pages/me/me",
     "pages/luck/luck",
     "pages/cart/cart",
-    "pages/logs/logs",
     "pages/detail/detail",
-    "pages/spike/spike"
+    "pages/spike/spike",
+    "pages/group/group",
+    "pages/gongzhong/gongzhong"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -14,6 +15,10 @@
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
+  "navigateToMiniProgramAppIdList": [
+    "wx5a9f6a2c25353607",
+    "wx5449e34426a83bdd"
+  ],
   "tabBar": {
     "selectedColor": "#EA5149",
     "list": [
